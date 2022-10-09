@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ // Start my navigation journey!
+header {
+    background-color: aquamarine;
+    width: 100%;
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 20px;
+}
+// My menu in bigscreen ... so beautiful!
+.im__a__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+
+    li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        margin-right: 10px; 
+        a {
+            text-decoration: none;
+            font-size: 42px;
+            margin: 5px;
+        }
+        a:hover {
+            background-color: black;
+            border-radius: 5px;
+        }
+        a:visited {
+            color: black;
+        }       
+    }
+}
+// Get the hamburger off screen!"#%#&%#
+
+.hamburger {
+    display: none;
+}
+// Get the checkbox off screen!"#%#&%#
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+// The true magic, making sure the input checkbox changes the display value of the im__a__menu class. And Voila we got a menu! in a Hamburger!
+#secret__menu:checked ~ .im__a__menu {
+    display: flex;
+}
+
+.toggle__menu:active {
+    color: red;
+}
+// Under 600px this happens...
+@media only screen and (max-width: 600px) {
+    // Make sure the hamburger menu is there.
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+    // Switches the style of the menu, while making it disappear.
+    .im__a__menu {
+        display: none;
+        position: absolute;
+        top: 4.375em;
+        right: 0px;
+        background-color: aqua;
+        border-radius: 10px;
+    
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;  
+            margin-right: 5px; 
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 5px;
+                }  
+            a:hover {
+                background-color: white;
+            }  
+            a:visited {
+                color: black;
+            }
+            }
+        }
+    }
+
+

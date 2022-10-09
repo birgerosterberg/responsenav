@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize my css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My own css -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/26aa5150aa.js" crossorigin="anonymous"></script>
+    <title>Responsive Navbar</title>
+</head>
+<body>
+    <!-- Navbar class för placements in the header <3 -->
+    <header class="navbar">
+        <!-- A lil playfullness of logo -->
+        <h1 class="logo">Logo lifestyle</h1>
+        <nav>
+            <ul>
+                <!-- The magic that burnt my brain, have the input just above the class it will play with! -->
+                <input id="secret__menu" class="check" type="checkbox">
+                <!-- The class to style menu and make it disapear and appear! -->
+                <div class="im__a__menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        <!-- The label to controll the secret__menu checkbox item instead of an ugly item i used font awesome -->
+        <label class="toggle__menu" for="secret__menu"><i class="hamburger fa-solid fa-bars fa-3x"></i></label>
+    </header>
+
+</body>
+</html>
